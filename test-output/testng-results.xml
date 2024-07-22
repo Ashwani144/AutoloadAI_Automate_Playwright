@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-21T15:27:34Z" name="MyTestSuite" finished-at="2024-07-21T15:27:54Z" duration-ms="20427">
+  <suite started-at="2024-07-22T10:42:13Z" name="MyTestSuite" finished-at="2024-07-22T10:42:39Z" duration-ms="25962">
     <groups>
     </groups>
-    <test started-at="2024-07-21T15:27:34Z" name="Autoload AI Home Page Test_chrome" finished-at="2024-07-21T15:27:54Z" duration-ms="20167">
+    <test started-at="2024-07-22T10:42:13Z" name="Autoload AI Home Page Test_chrome" finished-at="2024-07-22T10:42:38Z" duration-ms="25083">
       <class name="com.qa.AutoloadAI.tests.HomePageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-21T15:27:34Z" name="setup" finished-at="2024-07-21T15:27:48Z" duration-ms="14232" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-22T10:42:13Z" name="setup" finished-at="2024-07-22T10:42:34Z" duration-ms="20962" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-21T15:27:48Z" name="homePageTitleTest" finished-at="2024-07-21T15:27:49Z" duration-ms="508" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-22T10:42:34Z" name="homePageTitleTest" finished-at="2024-07-22T10:42:34Z" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-21T15:27:52Z" name="homePageURLTest" finished-at="2024-07-21T15:27:52Z" duration-ms="6" status="PASS">
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-22T10:42:36Z" name="homePageURLTest" finished-at="2024-07-22T10:42:36Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageURLTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-21T15:27:53Z" name="tearDown" finished-at="2024-07-21T15:27:54Z" duration-ms="1372" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@398dada8]" started-at="2024-07-22T10:42:37Z" name="tearDown" finished-at="2024-07-22T10:42:38Z" duration-ms="826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.AutoloadAI.tests.HomePageTest -->
     </test> <!-- Autoload AI Home Page Test_chrome -->
-    <test started-at="2024-07-21T15:27:34Z" name="Autoload AI Login Page Test_edge" finished-at="2024-07-21T15:27:54Z" duration-ms="20427">
+    <test started-at="2024-07-22T10:42:13Z" name="Autoload AI Login Page Test_edge" finished-at="2024-07-22T10:42:39Z" duration-ms="25962">
       <class name="com.qa.AutoloadAI.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-21T15:27:34Z" name="setup" finished-at="2024-07-21T15:27:49Z" duration-ms="15255" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-22T10:42:13Z" name="setup" finished-at="2024-07-22T10:42:34Z" duration-ms="21286" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,15 +45,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-21T15:27:49Z" name="loginPageNavigationTest" finished-at="2024-07-21T15:27:53Z" duration-ms="3532" status="PASS">
+        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-22T10:42:34Z" name="loginPageNavigationTest" finished-at="2024-07-22T10:42:36Z" duration-ms="2173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNavigationTest -->
-        <test-method signature="appLoginTest()[pri:2, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-21T15:27:53Z" name="appLoginTest" finished-at="2024-07-21T15:27:53Z" duration-ms="277" status="PASS">
+        <test-method signature="appLoginTest()[pri:2, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-22T10:42:37Z" name="appLoginTest" finished-at="2024-07-22T10:42:37Z" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-21T15:27:53Z" name="tearDown" finished-at="2024-07-21T15:27:54Z" duration-ms="944" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.AutoloadAI.tests.LoginPageTest@df6620a]" started-at="2024-07-22T10:42:38Z" name="tearDown" finished-at="2024-07-22T10:42:39Z" duration-ms="1012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

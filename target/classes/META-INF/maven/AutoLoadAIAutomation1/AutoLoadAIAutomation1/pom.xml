@@ -13,7 +13,7 @@
 	<name>AutoLoadAIAutomation1</name>
 	<url>http://www.example.com</url>
 
-<properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -42,7 +42,6 @@
 		</dependency>
 
 
-
 	</dependencies>
 
 	<build>
@@ -57,7 +56,7 @@
 				</configuration>
 			</plugin>
 
-
+		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -66,20 +65,17 @@
 				<configuration>
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
-					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+					<argLine>-Xmx1024m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testrunners/testng_regressions.xml</suiteXmlFile>
+						<suiteXmlFile>
+							src/test/resources/testrunners/testng_regressions.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 
 					</suiteXmlFiles>
 
 
-
 				</configuration>
 			</plugin>
-
-
-
 
 
 		</plugins>
