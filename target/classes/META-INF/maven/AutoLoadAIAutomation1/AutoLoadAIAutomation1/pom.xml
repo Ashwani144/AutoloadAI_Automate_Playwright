@@ -111,7 +111,8 @@
 
 					</suiteXmlFiles>
 
-
+                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+             
 				</configuration>
 			</plugin>
 

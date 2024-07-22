@@ -13,7 +13,7 @@ pipeline
             steps
             {
                  git 'https://github.com/Ashwani144/AutoloadAI_Automate_Playwright.git'
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
  
             }
             post 
