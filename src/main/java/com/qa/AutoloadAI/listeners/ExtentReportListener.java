@@ -34,13 +34,13 @@ public class ExtentReportListener implements ITestListener {
 
         extentReports = new ExtentReports();
         ExtentSparkReporter reporter = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
-        reporter.config().setReportName("Open Cart Automation Test Results");
+        reporter.config().setReportName("Autoload AI Automation Test Results");
         extentReports.attachReporter(reporter);
-        extentReports.setSystemInfo("System", "MAC");
-        extentReports.setSystemInfo("Author", "Naveen AutomationLabs");
+        extentReports.setSystemInfo("System", "Window");
+        extentReports.setSystemInfo("Author", "Ashwani Pandey");
         extentReports.setSystemInfo("Build#", "1.1");
-        extentReports.setSystemInfo("Team", "OMS");
-        extentReports.setSystemInfo("Customer Name", "NAL");
+        extentReports.setSystemInfo("Team", "QA");
+        extentReports.setSystemInfo("Customer Name", "MagicGroup");
         return extentReports;
     }
 
