@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-22T13:31:54Z" name="MyTestSuite" finished-at="2024-07-22T13:33:46Z" duration-ms="112546">
+    <groups>
+    </groups>
+    <test started-at="2024-07-22T13:31:54Z" name="Autoload AI Home Page Test_chrome" finished-at="2024-07-22T13:33:46Z" duration-ms="111992">
+      <class name="com.qa.AutoloadAI.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@6bb4dd34]" started-at="2024-07-22T13:31:54Z" name="setup" finished-at="2024-07-22T13:33:44Z" duration-ms="110325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@6bb4dd34]" started-at="2024-07-22T13:33:44Z" name="homePageTitleTest" finished-at="2024-07-22T13:33:44Z" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@6bb4dd34]" started-at="2024-07-22T13:33:45Z" name="homePageURLTest" finished-at="2024-07-22T13:33:45Z" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageURLTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.AutoloadAI.tests.HomePageTest@6bb4dd34]" started-at="2024-07-22T13:33:45Z" name="tearDown" finished-at="2024-07-22T13:33:46Z" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.AutoloadAI.tests.HomePageTest -->
+    </test> <!-- Autoload AI Home Page Test_chrome -->
+    <test started-at="2024-07-22T13:31:54Z" name="Autoload AI Login Page Test_edge" finished-at="2024-07-22T13:33:46Z" duration-ms="112546">
+      <class name="com.qa.AutoloadAI.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.AutoloadAI.tests.LoginPageTest@638ef7ed]" started-at="2024-07-22T13:31:54Z" name="setup" finished-at="2024-07-22T13:33:44Z" duration-ms="110336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.AutoloadAI.tests.LoginPageTest@638ef7ed]" started-at="2024-07-22T13:33:44Z" name="loginPageNavigationTest" finished-at="2024-07-22T13:33:45Z" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageNavigationTest -->
+        <test-method signature="appLoginTest()[pri:2, instance:com.qa.AutoloadAI.tests.LoginPageTest@638ef7ed]" started-at="2024-07-22T13:33:45Z" name="appLoginTest" finished-at="2024-07-22T13:33:46Z" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.AutoloadAI.tests.LoginPageTest@638ef7ed]" started-at="2024-07-22T13:33:46Z" name="tearDown" finished-at="2024-07-22T13:33:46Z" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.AutoloadAI.tests.LoginPageTest -->
+    </test> <!-- Autoload AI Login Page Test_edge -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>

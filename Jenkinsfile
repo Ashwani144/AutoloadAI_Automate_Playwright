@@ -13,11 +13,8 @@ pipeline
             steps
             {
                  git 'https://github.com/Ashwani144/AutoloadAI_Automate_Playwright.git'
-           //      sh "mvn -Dmaven.test.failure.ignore=true clean package"
-           export MAVEN_HOME=/opt/maven
-export PATH=$PATH:$MAVEN_HOME/bin
-mvn --version
-mvn clean package
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+ 
             }
             post 
             {
