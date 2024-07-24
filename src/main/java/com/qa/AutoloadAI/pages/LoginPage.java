@@ -9,6 +9,7 @@ public class LoginPage {
 	private String emailId = "//input[@placeholder='Enter Email']";
 	private String password = "//input[@placeholder='Enter Password']";
 	private String loginBtn = "//button[text()='Log in ']";
+	private String loginLink = "//button[text()='Log In / Sign Up']";
 //	private String forgotPwdLink = "//a[text()='Forgot Password?']";
 	//private String logoutLink = "//a[@class='list-group-item'][normalize-space()='Logout']";
 
@@ -43,6 +44,5 @@ public class LoginPage {
 		//	System.out.println("user is not logged in successfully....");
 		//	return false;
 	}
-
 }
 

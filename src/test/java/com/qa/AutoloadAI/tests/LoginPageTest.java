@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import com.qa.AutoloadAI.base.BaseTest;
 import com.qa.AutoloadAI.constants.AppConstants;
-import com.qa.AutoloadAI.pages.ExecuteScriptPage;
 import com.qa.AutoloadAI.pages.LoginPage;
 
 public class LoginPageTest extends BaseTest {
@@ -28,4 +27,5 @@ public class LoginPageTest extends BaseTest {
 	public void appLoginTest() {
 		loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
+	
 }
