@@ -7,27 +7,45 @@
 	<listeners>
 		<listener
 			class-name="com.qa.AutoloadAI.listeners.ExtentReportListener" />
+
 	</listeners>
-	<!-- <test name="Autoload AI Home Page Test_chrome">
-		<parameter name="browser" value="chrome" /> Define your desired browser here
+	
+	<test name="Autoload AI Home Page Test_edge">
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
 			<class name="com.qa.AutoloadAI.tests.HomePageTest" />
 		</classes>
 	</test>
 
 	<test name="Autoload AI Login Page Test_edge">
-		<parameter name="browser" value="chrome" /> Define your desired browser here
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
-			<class name="com.qa.AutoloadAI.tests.LoginPageTest" />
+			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
-	</test> -->
-
+	</test>
+	
 	<test name="Autoload AI ScriptExecute Page Test_edge">
 		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
 			<class name="com.qa.AutoloadAI.tests.ExecuteScriptTest" />
 		</classes>
 	</test>
+
+	<test name="Autoload AI ScriptExecute Page Test_edge">
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
+		<classes>
+			<class name="com.qa.AutoloadAI.tests.ReportPageTest" />
+		</classes>
+	</test>
+
+
+	<!-- <test name="Autoload AI Report Page Test_chrome"> <parameter name="browser" 
+		value="chrome" /> Define your desired browser here <classes> <class name="com.qa.AutoloadAI.tests.ReportPageTest" 
+		/> </classes> </test> -->
+
+
+
+
 	<!-- <test name="Open Cart Home Page Test_chromium"> <parameter name="browser" 
 		value="chromium" /> <classes> <class name="com.qa.opencart.tests.LoginPageTest" 
 		/> </classes> </test> -->

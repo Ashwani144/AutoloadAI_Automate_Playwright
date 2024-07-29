@@ -10,6 +10,9 @@ public class LoginPage {
 	private String password = "//input[@placeholder='Enter Password']";
 	private String loginBtn = "//button[text()='Log in ']";
 	private String loginLink = "//button[text()='Log In / Sign Up']";
+	private String ExecuteIcon = "(//span[contains(text(),'WebLoadMPStore_')])[1]/following::td[3]//button/span[@aria-label='play-circle']";
+	private String ReportIcon = "//span[@aria-label='dot-chart']//*[name()='svg']";
+	
 //	private String forgotPwdLink = "//a[text()='Forgot Password?']";
 	//private String logoutLink = "//a[@class='list-group-item'][normalize-space()='Logout']";
 
@@ -43,6 +46,18 @@ public class LoginPage {
 		//{
 		//	System.out.println("user is not logged in successfully....");
 		//	return false;
+	}
+	
+	public ExecuteScriptPage NavigateToExecuteIcon() {
+		page.click(ExecuteIcon);
+		return new ExecuteScriptPage(page);
+		
+	}
+	
+	public ReportScriptPage NavigateToReportIcon() {
+		page.click(ReportIcon);
+		return new ReportScriptPage(page);
+		
 	}
 }
 

@@ -10,8 +10,10 @@ import com.microsoft.playwright.Page;
 import com.qa.AutoloadAI.factory.PlaywrightFactory;
 import com.qa.AutoloadAI.listeners.ExtentReportListener;
 import com.qa.AutoloadAI.listeners.ScreenshotUtil;
+import com.qa.AutoloadAI.pages.ExecuteScriptPage;
 import com.qa.AutoloadAI.pages.HomePage;
 import com.qa.AutoloadAI.pages.LoginPage;
+import com.qa.AutoloadAI.pages.ReportScriptPage;
 
 public class BaseTest {
 
@@ -21,7 +23,8 @@ public class BaseTest {
 
 	protected HomePage homePage;
 	protected LoginPage loginPage;
-	//protected ExecuteScriptPage executescriptpage;
+	protected ExecuteScriptPage executescriptpage;
+	protected ReportScriptPage reportscriptpage;
 
 	@Parameters({ "browser" })
 	@BeforeTest
@@ -37,7 +40,8 @@ public class BaseTest {
 		page = pf.initBrowser(prop);
 		homePage = new HomePage(page);
 		loginPage = new LoginPage(page);
-	//	executescriptpage = new ExecuteScriptPage(page);
+        executescriptpage = new ExecuteScriptPage(page);
+        reportscriptpage = new ReportScriptPage(page);
 		 // Initialize ScreenshotUtil and set in ExtentReportListener
       ScreenshotUtil screenshotUtil = new ScreenshotUtil(page);
       ExtentReportListener.setScreenshotUtil(screenshotUtil);

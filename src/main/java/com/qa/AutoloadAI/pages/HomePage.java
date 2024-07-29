@@ -8,6 +8,7 @@ public class HomePage {
 
 	// 1. String Locators - OR
 	private String loginLink = "//button[text()='Log In / Sign Up']";
+	private String ExecuteIcon = "(//span[contains(text(),'WebLoadMPStore_')])[1]/following::td[3]//button/span[@role='img']";
 
 	// 2. page constructor:
 	public HomePage(Page page) {
@@ -34,7 +35,7 @@ public class HomePage {
 	 */
 	
 	public LoginPage navigateToLoginPage() {
-	//	page.click(myAccountLink);
+	//	page.click(ExecuteIcon);
 		page.click(loginLink);
 		return new LoginPage(page);
 	}

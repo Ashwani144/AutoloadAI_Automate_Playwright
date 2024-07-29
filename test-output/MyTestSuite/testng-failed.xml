@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.qa.AutoloadAI.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Autoload AI ScriptExecute Page Test_edge(failed)" verbose="4">
+  <test thread-count="5" parallel="tests" name="Autoload AI Report Page Test_chrome(failed)" verbose="4">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.AutoloadAI.tests.ExecuteScriptTest">
+      <class name="com.qa.AutoloadAI.tests.ReportPageTest">
         <methods>
+          <include name="reportScriptFlow"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="appLoginTest"/>
         </methods>
-      </class> <!-- com.qa.AutoloadAI.tests.ExecuteScriptTest -->
+      </class> <!-- com.qa.AutoloadAI.tests.ReportPageTest -->
     </classes>
-  </test> <!-- Autoload AI ScriptExecute Page Test_edge(failed) -->
+  </test> <!-- Autoload AI Report Page Test_chrome(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

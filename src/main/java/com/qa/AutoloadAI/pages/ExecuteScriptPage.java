@@ -1,75 +1,83 @@
-/*
+
 package com.qa.AutoloadAI.pages;
 
+import java.util.List;
+
+import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Page;
 
 public class ExecuteScriptPage {
 
-    private Page page;
+	private Page page;
 
-    public ExecuteScriptPage(Page page) {
-        this.page = page;
+	// 1. String Locators - OR
+	private String executeIcon = "(//span[contains(text(),'WebLoadMPStore_')])[1]/following::td[3]//button/span[@role='img']";
+	private String selectReleaseID = "//input[@aria-owns='rc_select_5_list']/following::span[1]";
+	private String relo1Option = "text='Rel01' >> div";
+    private String loadButton = "text='LOAD'";
+
+    private String loadGeneratorDropdown = ".ant-select-selection-overflow";
+    private String loadGeneratorOption = "text='LoadGenerator-India'";
+    private String runDescriptionField = "input[placeholder='Run Description']";
+    private String vUserField = "input[placeholder='VUser']";
+    private String rampUpDurationField = "input[placeholder='Ramp Up Duration']";
+    private String testDurationField = "input[placeholder='Test Duration']";
+    private String initialDelayField = "input[placeholder='Initial Delay']";
+    private String executeButton = "text='play-circle Execute'";
+    private String reloadButton = "text='reload'";
+
+	// 2. page constructor:
+
+	public ExecuteScriptPage(Page page) {
+		this.page = page;
+	}
+
+	// 3. page actions/methodsselector_for_play_button
+
+	public void clickPlayButton() {
+		page.click(executeIcon);
+
+	}
+
+	public void clickSelect1() {
+		page.click("#rc_select_1");
+	//	page.click(relo1Option);
+		//page.click("//div[@class='ant-select-item-option-content']");
+		//page.click("text=Relo1");
+		page.keyboard().press("Enter");
+	}
+
+
+    public void clickLoadButton() {
+       // page.click(loadButton);
+    	page.click("#rc_select_2");
+    	page.keyboard().press("Enter");
     }
 
-    public void clickPlayButton() {
-        page.click("selector_for_play_button");
+    public void selectLoadGenerator() {
+        page.click(loadGeneratorDropdown);
+        page.click(loadGeneratorOption);
     }
 
-    public void clickSelect1() {
-        page.click("selector_for_select1");
-    }
-
-    public void selectLoadOption() {
-        page.selectOption("selector_for_load_option", "value");
-    }
-
-    public void clickSelect2() {
-        page.click("selector_for_select2");
-    }
-
-    public void clickLoadText() {
-        page.click("selector_for_load_text");
-    }
-
-    public void clickSelectionOverflow() {
-        page.click("selector_for_selection_overflow");
-    }
-
-    public void selectLoadGeneratorText() {
-        page.selectOption("selector_for_load_generator_text", "value");
-    }
-
-    public void enterRunDescription(String description) {
-        page.fill("selector_for_run_description", description);
-    }
-
-    public void enterVUser(String vUser) {
-        page.fill("selector_for_vuser", vUser);
-    }
-
-    public void enterRampUpDuration(String duration) {
-        page.fill("selector_for_ramp_up_duration", duration);
-    }
-
-    public void enterTestDuration(String duration) {
-        page.fill("selector_for_test_duration", duration);
-    }
-
-    public void enterInitialDelay(String delay) {
-        page.fill("selector_for_initial_delay", delay);
+    public void fillRunDetails(String runDescription, String vUser, String rampUpDuration, String testDuration, String initialDelay) {
+        page.fill(runDescriptionField, runDescription);
+        page.fill(vUserField, vUser);
+        page.fill(rampUpDurationField, rampUpDuration);
+        page.fill(testDurationField, testDuration);
+        page.fill(initialDelayField, initialDelay);
     }
 
     public void clickExecuteButton() {
-        page.click("selector_for_execute_button");
+       // page.click(executeButton);
+        page.click("//span[text()='Execute']");
     }
 
     public void clickReloadButton() {
-        page.click("selector_for_reload_button");
+        page.click(reloadButton);
+    	//page.click("//button[@class='ant-btn css-byeoj0 ant-btn-primary execute-button']//span[@aria-label='play-circle']//*[name()='svg']");
+    	
+    //	page.click("//span[text()='Execute']");
     }
 
-    public void waitForTimeout(int timeout) {
-        page.waitForTimeout(timeout);
-    }
-}
+	}
 
-*/
