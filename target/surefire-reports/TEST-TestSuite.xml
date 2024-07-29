@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="114.147" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="65.326" tests="9" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="F:\QA_Assignment\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="C:\Users\hp\eclipse-workspace\AutoLoadAIAutomation1\EMBEDDED"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -50,18 +50,59 @@
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\hp\eclipse-workspace\AutoLoadAIAutomation1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="m2e.build.project.data.socket.port" value="51492"/>
+    <property name="m2e.build.project.data.socket.port" value="7670"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.library.path" value="F:\QA_Assignment\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/QA_Assignment/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin/server;F:/QA_Assignment/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\HP\NV\lib\shunra\vcat;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files (x86)\HP\NV\lib\thirdparty\safenet\LDK\7.0;C:\Program Files (x86)\HP\NV\lib\shunra\snv;C:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;F:\QA_Assignment\PT\gatling-charts-highcharts-bundle-3.10.3\bin;C:\Program Files\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\npm;F:\D\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin;C:\Users\hp\.jenkins\workspace;;F:\QA_Assignment\eclipse;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17.0.7+7"/>
-    <property name="classworlds.conf" value="C:\Users\hp\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5783924191389337141.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\hp\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10791091827754782036.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="homePageTitleTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="0.814"/>
-  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.945"/>
-  <testcase name="homePageURLTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="0.253"/>
-  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.515"/>
+  <testcase name="homePageTitleTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="1.782"/>
+  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="2.023"/>
+  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="2.211"/>
+  <testcase name="homePageURLTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="1.071"/>
+  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="2.297"/>
+  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="4.73"/>
+  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.406"/>
+  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.702"/>
+  <testcase name="reportScriptFlow" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="30.027">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)&#10;    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)&#10;    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;selector-for-summary-report&quot;)&#10;" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("selector-for-summary-report")
+
+	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:26)
+Caused by: com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("selector-for-summary-report")
+
+	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:26)
+</failure>
+    <system-out><![CDATA[Test Suite is ending!
+Test Suite is ending!
+reportScriptFlow failed!
+]]></system-out>
+  </testcase>
 </testsuite>

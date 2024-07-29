@@ -1,4 +1,5 @@
 com\qa\AutoloadAI\pages\HomePage.class
+com\qa\AutoloadAI\pages\ReportScriptPage.class
 com\qa\AutoloadAI\constants\AppConstants.class
 com\qa\AutoloadAI\factory\PlaywrightFactory.class
 com\qa\AutoloadAI\pages\LoginPage.class

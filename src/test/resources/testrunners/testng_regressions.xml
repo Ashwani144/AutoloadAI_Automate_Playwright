@@ -20,7 +20,7 @@
 	<test name="Autoload AI Login Page Test_edge">
 		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
+			<class name="com.qa.AutoloadAI.tests.LoginPageTest" />
 		</classes>
 	</test>
 	
@@ -31,7 +31,7 @@
 		</classes>
 	</test>
 
-	<test name="Autoload AI ScriptExecute Page Test_edge">
+	<test name="Autoload AI Report Page Test_edge">
 		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
 			<class name="com.qa.AutoloadAI.tests.ReportPageTest" />

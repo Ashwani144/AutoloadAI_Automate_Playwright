@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 114.147 s - in TestSuite
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 65.326 s <<< FAILURE! - in TestSuite
+reportScriptFlow(com.qa.AutoloadAI.tests.ReportPageTest)  Time elapsed: 30.027 s  <<< FAILURE!
+com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("selector-for-summary-report")
+
+	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:26)
+Caused by: com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("selector-for-summary-report")
+
+	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:26)
+

@@ -59,7 +59,7 @@
 			<version>${extentreports-version}</version>
 		</dependency>
 
-
+<!--
 		<dependency>
 			<groupId>PlaywrightPOMSeries</groupId>
 			<artifactId>PlaywrightPOMSeries</artifactId>
@@ -70,8 +70,8 @@
 			<artifactId>PlaywriteAutomation_Projectt</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-	</dependencies>
-
+	</dependencies>-->
+</dependencies>
 	<build>
 		<plugins>
 			<plugin>
