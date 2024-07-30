@@ -1,5 +1,9 @@
+com\qa\AutoloadAI\tests\ReleaseManagementTest.class
 com\qa\AutoloadAI\tests\ReportPageTest.class
+com\qa\AutoloadAI\tests\DeleteScriptTest.class
 com\qa\AutoloadAI\tests\LoginPageTest.class
 com\qa\AutoloadAI\base\BaseTest.class
 com\qa\AutoloadAI\tests\HomePageTest.class
+com\qa\AutoloadAI\tests\LoadGeneratorTest.class
 com\qa\AutoloadAI\tests\ExecuteScriptTest.class
+com\qa\AutoloadAI\tests\UploadResultTest.class

@@ -12,7 +12,12 @@ public class LoginPage {
 	private String loginLink = "//button[text()='Log In / Sign Up']";
 	private String ExecuteIcon = "(//span[contains(text(),'WebLoadMPStore_')])[1]/following::td[3]//button/span[@aria-label='play-circle']";
 	private String ReportIcon = "//span[@aria-label='dot-chart']//*[name()='svg']";
+	private String allResult = "//li[@class='ant-menu-item ant-menu-item-active ant-tooltip-open']//span[@aria-label='container']//*[name()='svg']";
+	private String ClickUtility = "//span[normalize-space()='Utility']";
+	private String ReportAllResult= "//span[normalize-space()='Reports']";
 	
+	
+	// private String allResult = "//li[@class='ant-menu-item ant-menu-item-active ant-menu-item-selected ant-tooltip-open']//span[text()='All Results']";
 //	private String forgotPwdLink = "//a[text()='Forgot Password?']";
 	//private String logoutLink = "//a[@class='list-group-item'][normalize-space()='Logout']";
 
@@ -57,6 +62,30 @@ public class LoginPage {
 	public ReportScriptPage NavigateToReportIcon() {
 		page.click(ReportIcon);
 		return new ReportScriptPage(page);
+		
+	}
+	
+	public DeleteScriptPage ToDeleteRecentScript() {
+		page.click(allResult);
+		return new DeleteScriptPage(page);
+		
+	}
+	
+	public LoadGeneratorPage ToValidatetheLoadGenerator() {
+		page.click(ClickUtility);
+		return new LoadGeneratorPage(page);
+		
+	}
+	
+	public ReleaseManagementPage ToValidateReleasemanagement() {
+		page.click(ClickUtility);
+		return new ReleaseManagementPage(page);
+		
+	}
+	
+	public UploadResultPage ToTestTheUploadResultData() {
+		page.click(ReportAllResult);
+		return new UploadResultPage(page);
 		
 	}
 }

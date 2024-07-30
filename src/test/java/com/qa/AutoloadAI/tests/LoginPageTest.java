@@ -24,7 +24,7 @@ public class LoginPageTest extends BaseTest {
 	 */
 
 	@Test(priority = 2)
-	public void appLoginTest() {
+	public void loginActionForLoginFlow() {
 		loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
 	

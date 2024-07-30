@@ -8,12 +8,12 @@ import com.qa.AutoloadAI.pages.ReportScriptPage;
 public class ReportPageTest extends BaseTest {
 
 	@Test(priority = 1)
-	public void loginPageNavigationTest() {
+	public void loginPageURLForReport() {
 		loginPage = homePage.navigateToLoginPage();
 	}
 
 	@Test(priority = 2)
-	public void appLoginTest() {
+	public void loginActionForReportPage() {
 		loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
 	
@@ -23,10 +23,12 @@ public class ReportPageTest extends BaseTest {
 	       ReportScriptPage reportscriptpage = new ReportScriptPage(page);
 	      
 	   //    reportscriptpage.clickReportIcon();
+	   //    reportscriptpage.goToSummaryReport();
+	       
 	       reportscriptpage.goToSummaryReport();
-
+	       
 	        // Search by ID
-	       reportscriptpage.enterID("P-1722159726484");
+	       reportscriptpage.enterID("P-1722352716432");
 	       reportscriptpage.clickSearchButton();
 
 	        // Validate responsiveness of each tab

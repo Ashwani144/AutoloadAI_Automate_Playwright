@@ -7,9 +7,10 @@ public class ReportScriptPage {
     // Locators
     private String reportIcon = "css=selector-for-report-icon";
     private String summaryReport = "css=selector-for-summary-report";
-    private String idField = "input[placeholder='ID']";
+   // private String idField = "input[placeholder='ID']";
+    private String idField = "//input[@id='rc_select_1']";
     private String searchButton = "button:has-text('Search')";
-    private String responseTimeVsVUserTab = "css=selector-for-ResponseTimeVsVUser";
+    private String responseTimeVsVUserTab = "//div[@id='rc-tabs-0-tab-1']";
     private String responseTimeByTransactionTab = "css=selector-for-ResponseTimeByTransaction";
     private String responseTimeUnderLoadTab = "css=selector-for-ResponseTimeUnderLoad";
     private String responseTimeByLocationTab = "css=selector-for-ResponseTimeByLocation";
@@ -26,12 +27,15 @@ public class ReportScriptPage {
 	 */
 
     public void goToSummaryReport() {
-        page.click(summaryReport);
+      //  page.click(summaryReport);
+  //  	page.click("//span[@aria-label='dot-chart']//*[name()='svg']//*[name()='path' and contains(@d,'M888 792H2')]");
         page.click("//span[normalize-space()='Summary']");
-       // page.click("//span[normalize-space()='Summary']");
+        page.click("//input[@id='rc_select_2']");
+      
     }
 
     public void enterID(String id) {
+    	
         page.fill(idField, id);
     }
 

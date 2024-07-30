@@ -9,8 +9,8 @@
 			class-name="com.qa.AutoloadAI.listeners.ExtentReportListener" />
 
 	</listeners>
-	
-	<test name="Autoload AI Home Page Test_edge">
+
+ <test name="Autoload AI Home Page Test_edge">
 		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
 			<class name="com.qa.AutoloadAI.tests.HomePageTest" />
@@ -23,13 +23,16 @@
 			<class name="com.qa.AutoloadAI.tests.LoginPageTest" />
 		</classes>
 	</test>
-	
+
+
+
 	<test name="Autoload AI ScriptExecute Page Test_edge">
 		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
 		<classes>
 			<class name="com.qa.AutoloadAI.tests.ExecuteScriptTest" />
 		</classes>
 	</test>
+
 
 	<test name="Autoload AI Report Page Test_edge">
 		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
@@ -39,22 +42,40 @@
 	</test>
 
 
-	<!-- <test name="Autoload AI Report Page Test_chrome"> <parameter name="browser" 
-		value="chrome" /> Define your desired browser here <classes> <class name="com.qa.AutoloadAI.tests.ReportPageTest" 
-		/> </classes> </test> -->
+
+	<test name="Autoload AI Delete Script Test_edge">
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
+		<classes>
+			<class name="com.qa.AutoloadAI.tests.DeleteScriptTest" />
+		</classes>
+	</test>
+
+ 
+	<test name="Autoload AI Load Generator Test_edge">
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
+		<classes>
+			<class name="com.qa.AutoloadAI.tests.LoadGeneratorTest" />
+		</classes>
+	</test>
+
+
+
+	<test name="Autoload AI Release Management Test_edge">
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
+		<classes>
+			<class name="com.qa.AutoloadAI.tests.ReleaseManagementTest" />
+		</classes>
+	</test>
 
 
 
 
-	<!-- <test name="Open Cart Home Page Test_chromium"> <parameter name="browser" 
-		value="chromium" /> <classes> <class name="com.qa.opencart.tests.LoginPageTest" 
-		/> </classes> </test> -->
-
-	<!-- <test name="Open Cart Login Page Test_edge1"> <parameter name="browser" 
-		value="edge" /> <classes> <class name="com.qa.opencart.tests.LoginPageTest" 
-		/> </classes> </test> -->
-
-
+	<test name="Autoload AI Upload Summary Report Test_edge">
+		<parameter name="browser" value="chrome" /> <!-- Define your desired browser here -->
+		<classes>
+			<class name="com.qa.AutoloadAI.tests.UploadResultTest" />
+		</classes>
+	</test>
 
 
 </suite>

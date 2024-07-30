@@ -9,7 +9,7 @@ import com.qa.AutoloadAI.constants.AppConstants;
 public class HomePageTest extends BaseTest {
 
 	@Test
-	public void homePageTitleTest() {
+	public void loginPageURLForHomePage() {
 		String actualTitle = homePage.getHomePageTitle();
 		Assert.assertEquals(actualTitle, AppConstants.HOME_PAGE_TITLE);
 	}

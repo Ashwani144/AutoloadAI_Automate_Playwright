@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="65.326" tests="9" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="75.715" tests="18" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -50,59 +50,816 @@
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\hp\eclipse-workspace\AutoLoadAIAutomation1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="m2e.build.project.data.socket.port" value="7670"/>
+    <property name="m2e.build.project.data.socket.port" value="12462"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.library.path" value="F:\QA_Assignment\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/QA_Assignment/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin/server;F:/QA_Assignment/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\HP\NV\lib\shunra\vcat;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files (x86)\HP\NV\lib\thirdparty\safenet\LDK\7.0;C:\Program Files (x86)\HP\NV\lib\shunra\snv;C:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;F:\QA_Assignment\PT\gatling-charts-highcharts-bundle-3.10.3\bin;C:\Program Files\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\npm;F:\D\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin;C:\Users\hp\.jenkins\workspace;;F:\QA_Assignment\eclipse;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17.0.7+7"/>
-    <property name="classworlds.conf" value="C:\Users\hp\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10791091827754782036.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\hp\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf78997382608862052.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="homePageTitleTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="1.782"/>
-  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="2.023"/>
-  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="2.211"/>
-  <testcase name="homePageURLTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="1.071"/>
-  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="2.297"/>
-  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="4.73"/>
-  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.406"/>
-  <testcase name="appLoginTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.702"/>
-  <testcase name="reportScriptFlow" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="30.027">
-    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)&#10;    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)&#10;    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;selector-for-summary-report&quot;)&#10;" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: 
+  <testcase name="homePageURLTest" classname="com.qa.AutoloadAI.tests.HomePageTest" time="4.078"/>
+  <testcase name="loginPageURLForExecuteScript" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="7.873"/>
+  <testcase name="loginPageURLForDeleteScript" classname="com.qa.AutoloadAI.tests.DeleteScriptTest" time="9.945"/>
+  <testcase name="loginPageURLForReport" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="0.696"/>
+  <testcase name="loginActionForExecuteScript" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="1.874"/>
+  <testcase name="loginPageNavigationTest" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="2.248"/>
+  <testcase name="loginActionForReportPage" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="0.203"/>
+  <testcase name="loginPageURLForHomePage" classname="com.qa.AutoloadAI.tests.HomePageTest" time="0"/>
+  <testcase name="loginActionForLoginFlow" classname="com.qa.AutoloadAI.tests.LoginPageTest" time="0.887"/>
+  <testcase name="loginPageURLForUploadResult" classname="com.qa.AutoloadAI.tests.UploadResultTest" time="2.474"/>
+  <testcase name="loginActionForUploadResult" classname="com.qa.AutoloadAI.tests.UploadResultTest" time="0.602"/>
+  <testcase name="loginPageURLForReleaseManagement" classname="com.qa.AutoloadAI.tests.ReleaseManagementTest" time="1.058"/>
+  <testcase name="loginPageURLForLoadGenerator" classname="com.qa.AutoloadAI.tests.LoadGeneratorTest" time="0.911"/>
+  <testcase name="loginActionForReleaseManagement" classname="com.qa.AutoloadAI.tests.ReleaseManagementTest" time="5.787"/>
+  <testcase name="loginActionForLoadGenerator" classname="com.qa.AutoloadAI.tests.LoadGeneratorTest" time="1.508"/>
+  <testcase name="executeScriptFlow" classname="com.qa.AutoloadAI.tests.ExecuteScriptTest" time="3.753">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\progress.js:78:26)&#10;    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\frames.js:1007:23)&#10;    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;text=&apos;reload&apos;&quot;)&#10;" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: 
 Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)
-    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)
-    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:361:39)
 }
 Call log:
-- waiting for locator("selector-for-summary-report")
+- waiting for locator("text='reload'")
 
-	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:26)
+	at com.qa.AutoloadAI.tests.ExecuteScriptTest.executeScriptFlow(ExecuteScriptTest.java:35)
 Caused by: com.microsoft.playwright.TimeoutError: 
 Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\progress.js:78:26)
-    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\frames.js:1007:23)
-    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-15031125889722243738\package\lib\server\dispatchers\dispatcher.js:361:39)
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:361:39)
 }
 Call log:
-- waiting for locator("selector-for-summary-report")
+- waiting for locator("text='reload'")
 
-	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:26)
+	at com.qa.AutoloadAI.tests.ExecuteScriptTest.executeScriptFlow(ExecuteScriptTest.java:35)
 </failure>
-    <system-out><![CDATA[Test Suite is ending!
-Test Suite is ending!
+    <system-out><![CDATA[ToValidatetheLoadGeneratorPage started!
+executeScriptFlow failed!
 reportScriptFlow failed!
 ]]></system-out>
   </testcase>
+  <testcase name="reportScriptFlow" classname="com.qa.AutoloadAI.tests.ReportPageTest" time="3.969">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\progress.js:78:26)&#10;    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\frames.js:1007:23)&#10;    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;//input[@id=&apos;rc_select_1&apos;]&quot;)&#10;-   locator resolved to &lt;input value=&quot;&quot; type=&quot;search&quot; role=&quot;combobox&quot; id=&quot;rc_select_1&quot; autocomplete=&quot;off&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; aria-autocomplete=&quot;list&quot; aria-owns=&quot;rc_select_1_list&quot; aria-controls=&quot;rc_select_1_list&quot; class=&quot;ant-select-selection-search-input&quot;/&gt;&#10;- attempting click action&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #1&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #2&#10;-   waiting 20ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #3&#10;-   waiting 100ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #4&#10;-   waiting 100ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #5&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #6&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #7&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #8&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #9&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #10&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #11&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #12&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #13&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #14&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #15&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #16&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #17&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #18&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #19&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #20&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #21&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #22&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #23&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #24&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #25&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #26&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #27&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #28&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #29&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #30&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #31&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #32&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #33&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #34&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #35&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #36&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #37&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #38&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #39&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #40&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #41&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #42&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #43&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #44&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #45&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #46&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #47&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #48&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #49&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #50&#10;-   waiting 500ms&#10;-   waiting for element to be visible, enabled and stable&#10;-   element is visible, enabled and stable&#10;-   scrolling into view if needed&#10;-   done scrolling&#10;-   &lt;span title=&quot;AUTOLOAD_QA&quot; class=&quot;ant-select-selection-item&quot;&gt;AUTOLOAD_QA&lt;/span&gt; intercepts pointer events&#10;- retrying click action, attempt #51&#10;-   waiting 500ms&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//input[@id='rc_select_1']")
+-   locator resolved to <input value="" type="search" role="combobox" id="rc_select_1" autocomplete="off" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" aria-owns="rc_select_1_list" aria-controls="rc_select_1_list" class="ant-select-selection-search-input"/>
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #1
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #2
+-   waiting 20ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #3
+-   waiting 100ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #4
+-   waiting 100ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #5
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #6
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #7
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #8
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #9
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #10
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #11
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #12
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #13
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #14
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #15
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #16
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #17
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #18
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #19
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #20
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #21
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #22
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #23
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #24
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #25
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #26
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #27
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #28
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #29
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #30
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #31
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #32
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #33
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #34
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #35
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #36
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #37
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #38
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #39
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #40
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #41
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #42
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #43
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #44
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #45
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #46
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #47
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #48
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #49
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #50
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #51
+-   waiting 500ms
+
+	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:31)
+Caused by: com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\hp\AppData\Local\Temp\playwright-java-16039074641286313852\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//input[@id='rc_select_1']")
+-   locator resolved to <input value="" type="search" role="combobox" id="rc_select_1" autocomplete="off" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" aria-owns="rc_select_1_list" aria-controls="rc_select_1_list" class="ant-select-selection-search-input"/>
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #1
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #2
+-   waiting 20ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #3
+-   waiting 100ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #4
+-   waiting 100ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #5
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #6
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #7
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #8
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #9
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #10
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #11
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #12
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #13
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #14
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #15
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #16
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #17
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #18
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #19
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #20
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #21
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #22
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #23
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #24
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #25
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #26
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #27
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #28
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #29
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #30
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #31
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #32
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #33
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #34
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #35
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #36
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #37
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #38
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #39
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #40
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #41
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #42
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #43
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #44
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #45
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #46
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #47
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #48
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #49
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #50
+-   waiting 500ms
+-   waiting for element to be visible, enabled and stable
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   <span title="AUTOLOAD_QA" class="ant-select-selection-item">AUTOLOAD_QA</span> intercepts pointer events
+- retrying click action, attempt #51
+-   waiting 500ms
+
+	at com.qa.AutoloadAI.tests.ReportPageTest.reportScriptFlow(ReportPageTest.java:31)
+]]></failure>
+  </testcase>
+  <testcase name="ToValidatetheLoadGeneratorPage" classname="com.qa.AutoloadAI.tests.ReleaseManagementTest" time="5.856"/>
 </testsuite>

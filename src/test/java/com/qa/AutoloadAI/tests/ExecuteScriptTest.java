@@ -9,12 +9,12 @@ import com.qa.AutoloadAI.pages.ExecuteScriptPage;
 public class ExecuteScriptTest extends BaseTest {
 
 	@Test(priority = 1)
-	public void loginPageNavigationTest() {
+	public void loginPageURLForExecuteScript() {
 		loginPage = homePage.navigateToLoginPage();
 	}
 
 	@Test(priority = 2)
-	public void appLoginTest() {
+	public void loginActionForExecuteScript() {
 		loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
 
@@ -28,12 +28,17 @@ public class ExecuteScriptTest extends BaseTest {
 
 		executescriptpage.clickLoadButton();
 		executescriptpage.selectLoadGenerator();
+		 page.waitForTimeout(5000);
 		//executescriptpage.fillRunDetails();
 		executescriptpage.fillRunDetails("Test Demo", "2", "10", "30", "0");
+		
+		 page.waitForTimeout(5000);
 		executescriptpage.clickExecuteButton();
 	//	 executescriptpage).waitForTimeout(10000);
-		executescriptpage.clickReloadButton();
-		executescriptpage.clickExecuteButton();
+	//	executescriptpage.clickReloadButton();
+		
+		 
+	//	executescriptpage.clickExecuteButton();
 	//	executescriptpage.enterRunDescription("Test Demo");
 		/*
 		 * fillRunDetails.enterVUser("2"); executescriptpage.enterRampUpDuration("10");

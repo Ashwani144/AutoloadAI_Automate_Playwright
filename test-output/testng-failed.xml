@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.AutoloadAI.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Autoload AI Delete Script Test_edge(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.AutoloadAI.tests.DeleteScriptTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="DeleteTheRecentScript"/>
+        </methods>
+      </class> <!-- com.qa.AutoloadAI.tests.DeleteScriptTest -->
+    </classes>
+  </test> <!-- Autoload AI Delete Script Test_edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Autoload AI Report Page Test_edge(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.AutoloadAI.tests.ReportPageTest">
+        <methods>
+          <include name="reportScriptFlow"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.AutoloadAI.tests.ReportPageTest -->
+    </classes>
+  </test> <!-- Autoload AI Report Page Test_edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Autoload AI Load Generator Test_edge(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.AutoloadAI.tests.LoadGeneratorTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="ToValidatetheLoadGeneratorPage"/>
+        </methods>
+      </class> <!-- com.qa.AutoloadAI.tests.LoadGeneratorTest -->
+    </classes>
+  </test> <!-- Autoload AI Load Generator Test_edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Autoload AI Upload Summary Report Test_edge(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.AutoloadAI.tests.UploadResultTest">
+        <methods>
+          <include name="ToValidatetheUploadResultFeature"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.AutoloadAI.tests.UploadResultTest -->
+    </classes>
+  </test> <!-- Autoload AI Upload Summary Report Test_edge(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

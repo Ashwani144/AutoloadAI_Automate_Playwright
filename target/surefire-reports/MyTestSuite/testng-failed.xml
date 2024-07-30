@@ -16,4 +16,16 @@
       </class> <!-- com.qa.AutoloadAI.tests.ReportPageTest -->
     </classes>
   </test> <!-- Autoload AI Report Page Test_edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Autoload AI ScriptExecute Page Test_edge(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.AutoloadAI.tests.ExecuteScriptTest">
+        <methods>
+          <include name="executeScriptFlow"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.AutoloadAI.tests.ExecuteScriptTest -->
+    </classes>
+  </test> <!-- Autoload AI ScriptExecute Page Test_edge(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

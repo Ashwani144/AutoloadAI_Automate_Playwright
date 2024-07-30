@@ -69,15 +69,16 @@ public class ExecuteScriptPage {
 
     public void clickExecuteButton() {
        // page.click(executeButton);
-        page.click("//span[text()='Execute']");
+      //  page.click("//span[text()='Execute']");
+        page.click("(//span[text()='Execute'])");
     }
 
-    public void clickReloadButton() {
-        page.click(reloadButton);
+ //   public void clickReloadButton() {
+   //     page.click(reloadButton);
     	//page.click("//button[@class='ant-btn css-byeoj0 ant-btn-primary execute-button']//span[@aria-label='play-circle']//*[name()='svg']");
     	
     //	page.click("//span[text()='Execute']");
     }
 
-	}
+
 
